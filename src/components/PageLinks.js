@@ -30,11 +30,13 @@ class PageLinks extends Component {
           <div style={styles.divCell}><PageInfo page={ServicingPage} /></div>
           <div style={styles.divCell}><PageInfo page={RepairsPage} /></div>
           <div style={styles.divCell}><PageInfo page={TuningPage} /></div>
+          <div style={styles.divCell}><PageInfo page={ElectricalPage} /></div>
         </div>
         <div style={styles.divRow}>
-          <div style={styles.divCell}><PageInfo page={ElectricalPage} /></div>
           <div style={styles.divCell}><PageInfo page={DiagnosticsPage} /></div>
           <div style={styles.divCell}><PageInfo page={CustomFabricationPage} /></div>
+          <div style={styles.divCell}><PageInfo page={ServicingPage} /></div>
+          <div style={styles.divCell}><PageInfo page={RepairsPage} /></div>
         </div>
 			</div>
 		)

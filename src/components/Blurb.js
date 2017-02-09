@@ -5,19 +5,25 @@ class Blurb extends Component {
 
 		const styles = {
 			divMain: {
-				"text-align": "center"
+				"text-align": "justify"
 			},
-			text: {
-				"margin-left": "auto",
-				"margin-right": "auto",
-				"color": "#ddd"
+			textTitle: {
+				"color": "#ddd",
+				"font-size": "18pt"
+			},
+			textBody: {
+				"color": "#ddd",
+				"font-size": "14pt"
 			}
 		}
 
 		return (
 			<div style={styles.divMain}>
-				<text style={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+				<text style={styles.textTitle}>
+					Better than the Competition.<br/>
+				</text>
+				<text style={styles.textBody}>
+					ipsum dolor sit amet, consectetur adipisicing elit.<br/>
 					Reiciendis, id, aut, officiis laboriosam a vero illo dolor<br/>
 					asperiores provident quibusdam praesentium ipsum!
 				</text>

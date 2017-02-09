@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Blurb from '../components/Blurb'
+
 class Banner extends Component {
 	render() {
 
@@ -8,21 +10,24 @@ class Banner extends Component {
         "width": "100%"
       },
       logo: {
-				"position": "absolute",
-				"margin-left": "auto",
-				"margin-right": "auto",
-				"left": "0",
-				"right": "0",
-				"top": "80px",
         "width": "50%"
       }
 		}
 
 		return (
-      <div>
-        <img src={require("../images/backdrop.png")} style={styles.backdrop} />
-        <img src={require("../images/main_logo.png")} style={styles.logo} />
-      </div>
+			<div>
+				<div className="row">
+					<div className="col-xs-12">
+						<img src={require("../images/backdrop.png")} style={styles.backdrop} />
+						<img src={require("../images/main_logo.png")} className="center-block" style={styles.logo} />
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-xs-offset-4 col-xs-4">
+						<Blurb />
+					</div>
+				</div>
+			</div>
 		)
 	}
 }
