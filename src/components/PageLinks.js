@@ -12,7 +12,10 @@ class PageLinks extends Component {
 	render() {
 
     const styles = {
-      divMain: {
+      heading: {
+        "color": "#777"
+      },
+      divTable: {
         "display": "table",
         "table-layout": "fixed"
       },
@@ -20,25 +23,29 @@ class PageLinks extends Component {
         "display": "table-row"
       },
       divCell: {
-        "display": "table-cell"
+        "display": "table-cell",
+        "width": "20%"
       }
     }
 
 		return (
-			<div style={styles.divMain}>
-        <div style={styles.divRow}>
-          <div style={styles.divCell}><PageInfo page={ServicingPage} /></div>
-          <div style={styles.divCell}><PageInfo page={RepairsPage} /></div>
-          <div style={styles.divCell}><PageInfo page={TuningPage} /></div>
-          <div style={styles.divCell}><PageInfo page={ElectricalPage} /></div>
+      <div>
+        <h2 style={styles.heading}>Pages</h2>
+        <div style={styles.divTable}>
+          <div style={styles.divRow}>
+            <div style={styles.divCell}><PageInfo page={ServicingPage} /></div>
+            <div style={styles.divCell}><PageInfo page={RepairsPage} /></div>
+            <div style={styles.divCell}><PageInfo page={TuningPage} /></div>
+            <div style={styles.divCell}><PageInfo page={ElectricalPage} /></div>
+          </div>
+          <div style={styles.divRow}>
+            <div style={styles.divCell}><PageInfo page={DiagnosticsPage} /></div>
+            <div style={styles.divCell}><PageInfo page={CustomFabricationPage} /></div>
+            <div style={styles.divCell}><PageInfo page={ServicingPage} /></div>
+            <div style={styles.divCell}><PageInfo page={RepairsPage} /></div>
+          </div>
         </div>
-        <div style={styles.divRow}>
-          <div style={styles.divCell}><PageInfo page={DiagnosticsPage} /></div>
-          <div style={styles.divCell}><PageInfo page={CustomFabricationPage} /></div>
-          <div style={styles.divCell}><PageInfo page={ServicingPage} /></div>
-          <div style={styles.divCell}><PageInfo page={RepairsPage} /></div>
-        </div>
-			</div>
+      </div>
 		)
 	}
 }

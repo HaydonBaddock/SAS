@@ -1,32 +1,31 @@
 import React, { Component } from 'react'
 
-import Blurb from '../components/Blurb'
-
 class Banner extends Component {
 	render() {
 
 		const styles = {
+      divMain: {
+        "position": "relative"
+      },
       backdrop: {
+        "position": "absolute",
         "width": "100%"
       },
-      logo: {
+			logo: {
+        "position": "absolute",
+        "margin-left": "auto",
+				"margin-right": "auto",
+        "left": "0",
+        "right": "0",
+        "top": "50px",
         "width": "50%"
-      }
+      },
 		}
 
 		return (
-			<div>
-				<div className="row">
-					<div className="col-xs-12">
-						<img src={require("../images/backdrop.png")} style={styles.backdrop} />
-						<img src={require("../images/main_logo.png")} className="center-block" style={styles.logo} />
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-xs-offset-4 col-xs-4">
-						<Blurb />
-					</div>
-				</div>
+			<div style={styles.divMain}>
+        <img src={require("../images/backdrop.png")} style={styles.backdrop} />
+        <img src={require("../images/logo_large.png")} style={styles.logo} />
 			</div>
 		)
 	}

@@ -8,59 +8,48 @@ import Footer from '../components/Footer'
 class HomePage extends Component {
 	render() {
 
+    const row = {
+      "height": "200px"
+    }
+
     const styles = {
 			divMain: {
-				"width": "100%",
-				"height": "1500px",
-				"background-color": "#222"
+        "width": "100%",
+				"background-color": "#111" // #CBCBCB
       },
-			divImages: {
-				"position": "relative"
-			},
-			logo: {
-				"position": "absolute"
+      divBanner: {
       },
-      backdrop: {
-        "width": "100%"
+      divBlurb: {
       },
       divPageLinks: {
-        "position": "absolute",
-				"margin-top": "50px",
-				"margin-left": "auto",
+        "margin-left": "auto",
 				"margin-right": "auto",
-				"left": "0",
-				"right": "0",
-        "width": "50%"
+        "width": "calc(100% / 1.5)",
+        "margin-top": "750px"
       },
       divFooter: {
-        "margin-top": "620px"
+        "margin-top": "100px"
       },
     }
 
 		return (
-			<div className="container" style={styles.divMain}>
+			<div style={styles.divMain}>
 
-				<div className="row">
-					<div className="col-xs-12" style={styles.divImages}>
-						<img src={require("../images/main_logo.png")} className="col-xs-offset-3 col-xs-6" style={styles.logo} />
-						<img src={require("../images/backdrop.png")} style={styles.backdrop} />
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-xs-offset-4 col-xs-4">
-						<Blurb />
-					</div>
-				</div>
+        <div style={styles.divBanner}>
+          <Banner />
+        </div>
 
-				{/*<div className="row">
-					<div className="col-xs-offset-3 col-xs-6">
-						<PageLinks />
-					</div>
-        </div>*/}
+        <div style={styles.divBlurb}>
+          <Blurb />
+        </div>
 
-        {/*<div style={styles.divFooter}>
-				  <Footer />
-        </div>*/}
+        <div style={styles.divPageLinks}>
+          <PageLinks />
+        </div>
+
+        <div style={styles.divFooter}>
+          <Footer />
+        </div>
 			</div>
 		)
 	}

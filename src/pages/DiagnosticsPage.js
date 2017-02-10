@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Footer from '../components/Footer'
+
 class DiagnosticsPage extends Component {
   static path = "/#/Diagnostics"
 	static title = "Diagnostics"
@@ -7,7 +9,10 @@ class DiagnosticsPage extends Component {
 	static greyImage = "diagnostics_grey.jpg"
 	render() {
 		return (
-			<h1>This is the Diagnostics page</h1>
+      <div>
+        <h1>This is the Diagnostics page</h1>
+        <Footer />
+      </div>
 		)
 	}
 }

@@ -18,24 +18,31 @@ class PageInfo extends Component {
     const styles = {
       anchor: {
         base: {
+          "position": "relative",
+          "width": "226px",
+          "height": "226px",
           "float": "left",
-          "margin": "20px",
+          "margin-top": "20px",
           "text-decoration": "none",
-          "max-width": "226px",
           "background-color": "#333",
+          "border": "solid 3px #333",
           "transition": "border 0.4s"
         },
         lit: {
-          "border": "solid 3px #ECE01C" // DF060A
+          "border-bottom": "solid 3px #ECE01C" // DF060A
         },
         dim: {
-          "border": "solid 3px #333"
+          "border-bottom": "solid 3px #333"
         }
       },
 
       image: {
         base: {
-          "margin-top": "-180",
+          "position": "absolute",
+          "margin-left": "auto",
+          "margin-right": "auto",
+          "left": "0",
+          "right": "0",
           "transition": "opacity 0.4s"
         },
         lit: {
@@ -49,7 +56,7 @@ class PageInfo extends Component {
       text: {
         base: {
           "text-align": "center",
-          "margin-top": "-3px",
+          "margin-top": "16px",
 				  "transition": "color 0.4s"
         },
         lit: {
