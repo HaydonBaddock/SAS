@@ -5,14 +5,13 @@ class Blurb extends Component {
 
 		const styles = {
       divMain: {
-        textAlign: "center",
-        width: "100%"
+        textAlign: "left"
       },
 			divTopSection: {
 				color: "#ddd"
 			},
 			divSplitSection: {
-				color: "#777"
+				color: "#aaa"
 			},
       divLeft: {
       },
@@ -23,7 +22,7 @@ class Blurb extends Component {
 		return (
 			<div className="center-block" style={styles.divMain}>
 
-				<div style={styles.divTopSection}>
+				<div className="col-xs-12" style={styles.divTopSection}>
 					<h3>
 						Better than the Competition.
 					</h3>

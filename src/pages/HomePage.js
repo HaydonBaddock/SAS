@@ -13,13 +13,7 @@ class HomePage extends Component {
 				backgroundColor: "#000" // #CBCBCB
       },
       divBanner: {
-				// position: "relative"
       },
-			divBody: {
-				// position: "absolute",
-				width: "100%",
-				marginTop: "640px"
-			},
       divBlurb: {
 				maxWidth: "1030px",
 				width: "80%",

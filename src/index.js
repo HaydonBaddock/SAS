@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 import ServicingPage from './pages/ServicingPage'
 import RepairsPage from './pages/RepairsPage'
 import TuningPage from './pages/TuningPage'
+import ProductsPage from './pages/ProductsPage'
 import ElectricalPage from './pages/ElectricalPage'
 import DiagnosticsPage from './pages/DiagnosticsPage'
 import FabricationPage from './pages/FabricationPage'
@@ -18,6 +19,7 @@ class App extends Component {
 				<Route path="Servicing" component={ServicingPage} />
 				<Route path="Repairs" component={RepairsPage} />
 				<Route path="Tuning" component={TuningPage}/>
+				<Route path="Products" component={ProductsPage}/>
 				<Route path="Electrical" component={ElectricalPage} />
 				<Route path="Diagnostics" component={DiagnosticsPage} />
 				<Route path="Fabrication" component={FabricationPage} />
