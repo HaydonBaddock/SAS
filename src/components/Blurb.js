@@ -5,53 +5,47 @@ class Blurb extends Component {
 
 		const styles = {
       divMain: {
-        "text-align": "center",
-        "width": "calc(100% / 1.5)",
-        "margin-left": "auto",
-				"margin-right": "auto",
-        "color": "#777"
+        textAlign: "center",
+        width: "100%"
       },
-			textTitle: {
-				"color": "#ddd",
-				"font-size": "18pt"
+			divTopSection: {
+				color: "#ddd"
 			},
-			textBody: {
-				"color": "#ddd",
-				"font-size": "14pt"
+			divSplitSection: {
+				color: "#777"
 			},
       divLeft: {
-        "display": "inline-block",
-        "width": "calc(60%)",
-        "padding": "10px"
       },
       divRight: {
-        "display": "inline-block",
-        "width": "calc(30%)",
-        "margin-left": "auto",
-        "padding": "30px"
       }
 		}
 
 		return (
-			<div style={styles.divMain}>
-				<text style={styles.textTitle}>
-					Better than the Competition.<br/>
-				</text>
-				<text style={styles.textBody}>
-					ipsum dolor sit amet, consectetur adipisicing elit.<br/>
-					Reiciendis, id, aut, officiis laboriosam a vero illo dolor<br/>
-					asperiores provident quibusdam praesentium ipsum!
-				</text>
+			<div className="center-block" style={styles.divMain}>
 
-        <div style={styles.divLeft}>
-          <h3>About</h3>
-          <p>hyusduhkj uhj ujfy hi iul io iokoijiul ugy fty tr tyiu jkasfkj jiuijo ij ijl lijijoioj ytf dtr dtrc trfh yuafkjfdkmf rkm vfnla iu iuuiluli uiui ujhiulilu uil lijil lijji jiil iljil lijlijilj jillij lijlij lij iljijiuji yhu tfy rft dedc rft</p>
-        </div>
+				<div style={styles.divTopSection}>
+					<h3>
+						Better than the Competition.
+					</h3>
+					<p>
+						ipsum dolor sit amet, consectetur adipisicing elit.<br/>
+						Reiciendis, id, aut, officiis laboriosam a vero illo dolor<br/>
+						asperiores provident quibusdam praesentium ipsum!
+					</p>
+				</div>
 
-        <div style={styles.divRight}>
-          <h3>Contact</h3>
-          <p>hyusduhkj uhj ujiu iu iuuiluli uiui ujhiulilu uil lijil lijji jiil iljil lijlijilj jillij lijlij lij iljijiuji yhu tfy rft dedc rft</p>
-        </div>
+				<div style={styles.divSplitSection}>
+					<div className="col-xs-12 col-md-8" style={styles.divLeft}>
+						<h3>About</h3>
+						<p>hyusduhkj uhj ujfy hi iul io iokoijiul ugy fty tr tyiu jkasfkj jiuijo ij ijl lijijoioj ytf dtr dtrc trfh yuafkjfdkmf rkm vfnla iu iuuiluli uiui ujhiulilu uil lijil lijji jiil iljil lijlijilj jillij lijlij lij iljijiuji yhu tfy rft dedc rft</p>
+					</div>
+
+					<div className="col-xs-12 col-md-4" style={styles.divRight}>
+						<h3>Contact</h3>
+						<p>hyusduhkj uhj ujiu iu iuuiluli uiui ujhiulilu uil lijil lijji jiil iljil lijlijilj jillij lijlij lij iljijiuji yhu tfy rft dedc rft</p>
+					</div>
+				</div>
+
       </div>
 		)
 	}

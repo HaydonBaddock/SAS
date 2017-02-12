@@ -5,28 +5,32 @@ class Footer extends Component {
 
 		const styles = {
 			footerMain: {
-        "width": "100%",
-        "padding-bottom": "48px",
-        "background-color": "#555", // #232323
-				"text-align": "center"
+        width: "100%",
+        paddingBottom: "48px",
+        backgroundColor: "#fff",
+				textAlign: "center"
+			},
+			spanSeparator: {
+				width: "100%",
+				height: "20px",
+				backgroundColor: "#555"
 			},
       imgLogo: {
-        "width": "150px"
+        width: "150px",
+				margin: "40px 0 40px 0"
       },
       link: {
-        // "text-decoration": "none",
-        "color": "white",
-        "font-weight": "bold"
+        color: "#555",
+        fontWeight: "bold"
       },
       text: {
-				"margin-left": "auto",
-				"margin-right": "auto",
-				"color": "#ddd"
+				color: "#555"
 			}
     }
 
 		return (
 			<footer style={styles.footerMain}>
+				<div style={styles.spanSeparator} />
         <img src={require("../images/logo_small.png")} alt="Specialised Auto Services" style={styles.imgLogo} />
         <p><a href="https://www.facebook.com/search/top/?q=specialised%20auto%20services" style={styles.link}>Facebook</a></p>
 				<p style={styles.text}>© Copyright 2017 Specialised Auto Services Ltd.</p>

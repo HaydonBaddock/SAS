@@ -8,7 +8,7 @@ import RepairsPage from './pages/RepairsPage'
 import TuningPage from './pages/TuningPage'
 import ElectricalPage from './pages/ElectricalPage'
 import DiagnosticsPage from './pages/DiagnosticsPage'
-import CustomFabricationPage from './pages/CustomFabricationPage'
+import FabricationPage from './pages/FabricationPage'
 
 class App extends Component {
 	render() {
@@ -20,7 +20,7 @@ class App extends Component {
 				<Route path="Tuning" component={TuningPage}/>
 				<Route path="Electrical" component={ElectricalPage} />
 				<Route path="Diagnostics" component={DiagnosticsPage} />
-				<Route path="CustomFabrication" component={CustomFabricationPage} />
+				<Route path="Fabrication" component={FabricationPage} />
 			</Router>
 		)
 	}

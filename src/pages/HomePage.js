@@ -8,48 +8,51 @@ import Footer from '../components/Footer'
 class HomePage extends Component {
 	render() {
 
-    const row = {
-      "height": "200px"
-    }
-
     const styles = {
 			divMain: {
-        "width": "100%",
-				"background-color": "#111" // #CBCBCB
+				backgroundColor: "#000" // #CBCBCB
       },
       divBanner: {
+				// position: "relative"
       },
+			divBody: {
+				// position: "absolute",
+				width: "100%",
+				marginTop: "640px"
+			},
       divBlurb: {
+				maxWidth: "1030px",
+				width: "80%",
+				marginTop: "815px"
       },
       divPageLinks: {
-        "margin-left": "auto",
-				"margin-right": "auto",
-        "width": "calc(100% / 1.5)",
-        "margin-top": "750px"
+				maxWidth: "1030px",
+        width: "80%"
       },
       divFooter: {
-        "margin-top": "100px"
+        marginTop: "80px"
       },
     }
 
 		return (
-			<div style={styles.divMain}>
+			<div className="container-fluid" style={styles.divMain}>
 
-        <div style={styles.divBanner}>
-          <Banner />
-        </div>
+				<div className="row" style={styles.divBanner}>
+					<Banner />
+				</div>
 
-        <div style={styles.divBlurb}>
-          <Blurb />
-        </div>
+				<div className="row center-block" style={styles.divBlurb}>
+					<Blurb />
+				</div>
 
-        <div style={styles.divPageLinks}>
-          <PageLinks />
-        </div>
+				<div className="row center-block" style={styles.divPageLinks}>
+					<PageLinks />
+				</div>
 
-        <div style={styles.divFooter}>
-          <Footer />
-        </div>
+				<div className="row" style={styles.divFooter}>
+					<Footer />
+				</div>
+
 			</div>
 		)
 	}

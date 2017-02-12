@@ -5,27 +5,28 @@ class Banner extends Component {
 
 		const styles = {
       divMain: {
-        "position": "relative"
+        position: "relative",
+				// backgroundImage: "url({require(\"../images/backdrop.png\")})"
       },
       backdrop: {
-        "position": "absolute",
-        "width": "100%"
+        position: "absolute",
+        width: "100%"
       },
 			logo: {
-        "position": "absolute",
-        "margin-left": "auto",
-				"margin-right": "auto",
-        "left": "0",
-        "right": "0",
-        "top": "50px",
-        "width": "50%"
+        position: "absolute",
+        marginLeft: "auto",
+				marginRight: "auto",
+        left: "0",
+        right: "0",
+        top: "50px",
+        width: "50%"
       },
 		}
 
 		return (
 			<div style={styles.divMain}>
-        <img src={require("../images/backdrop.png")} style={styles.backdrop} />
-        <img src={require("../images/logo_large.png")} style={styles.logo} />
+        <img src={require("../images/backdrop.png")} role="presentation" style={styles.backdrop} />
+        <img src={require("../images/logo_large.png")} alt="Specialised Auto Services" style={styles.logo} />
 			</div>
 		)
 	}
