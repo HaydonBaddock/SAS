@@ -17,7 +17,7 @@ class HomePage extends Component {
       divBlurb: {
 				maxWidth: "1030px",
 				width: "80%",
-				marginTop: "815px"
+				//marginTop: "815px"
       },
       divPageLinks: {
 				maxWidth: "1030px",
