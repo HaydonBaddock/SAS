@@ -17,7 +17,7 @@ class PageLinks extends Component {
         color: "#aaa"
       },
       divCell: {
-				marginTop: "20px"
+				marginTop: "30px"
       }
     }
 

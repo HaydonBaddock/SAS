@@ -19,9 +19,8 @@ class PageInfo extends Component {
       anchor: {
         base: {
           position: "relative",
-					// width: "100%",
-          maxWidth: "228px", // 220
-          // height: "228px", // 158
+					width: "100%",
+          // maxWidth: "228px", // 220
           float: "left",
           textDecoration: "none",
           backgroundColor: "#333",
@@ -40,14 +39,16 @@ class PageInfo extends Component {
         }
       },
 
-      image: {
+      imageGrey: {
+        position: "absolute",
+        width: "100%"
+      },
+
+      imageColoured: {
         base: {
           position: "absolute",
-          marginLeft: "auto",
-          marginRight: "auto",
-          left: "0",
-          right: "0",
-          transition: "opacity 0.4s",
+          width: "100%",
+          transition: "opacity 0.4s"
         },
         lit: {
 				  opacity: "1"
@@ -60,7 +61,7 @@ class PageInfo extends Component {
       text: {
         base: {
           textAlign: "center",
-          margin: "10px 0 10px 0",
+          margin: "200px 0 10px 0",
 				  transition: "color 0.4s"
         },
         lit: {
@@ -74,8 +75,8 @@ class PageInfo extends Component {
 
     return (
 			<a href={this.props.page.path} style={{...styles.anchor.base,...this.state.mouseOver ? styles.anchor.lit : styles.anchor.dim}} onMouseEnter={this.onMouseMoveHandler} onMouseLeave={this.onMouseMoveHandler}>
-        <img src={require("../images/servicing_grey.jpg")} role="presentation" />
-        <img src={require("../images/servicing.jpg")} role="presentation" style={{...styles.image.base,...this.state.mouseOver ? styles.image.lit : styles.image.dim}} />
+        <img src={require("../images/servicing_grey.jpg")} role="presentation" style={styles.imageGrey} />
+        <img src={require("../images/servicing.jpg")} role="presentation" style={{...styles.imageColoured.base,...this.state.mouseOver ? styles.imageColoured.lit : styles.imageColoured.dim}} />
 				<h3 style={{...styles.text.base,...this.state.mouseOver ? styles.text.lit : styles.text.dim}}>{this.props.page.title}</h3>
 			</a>
     )
