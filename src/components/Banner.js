@@ -12,11 +12,6 @@ class Banner extends Component {
 			carousel: {
 				height: "800px"
 			},
-			imageCar: {
-				height: "500px",
-				width: "auto",
-				marginTop: "200px"
-			},
 			logo: {
         position: "absolute",
         marginLeft: "auto",
@@ -31,12 +26,14 @@ class Banner extends Component {
 		return (
 			<div>
 
-				<Carousel style={styles.carousel}>
+        {/*<img src={require("../images/showroom.png")} role="presentation" style={styles.backdrop} />*/}
+
+				<Carousel indicators={false} style={styles.carousel}>
 					<Carousel.Item>
 						<img className="center-block" src={require("../images/showroom.png")} role="presentation" />
 					</Carousel.Item>
 					<Carousel.Item>
-						<img className="center-block" src={require("../images/car.png")} role="presentation" style={styles.imageCar} />
+						<img className="center-block" src={require("../images/car.png")} role="presentation" />
 					</Carousel.Item>
 				</Carousel>
 
