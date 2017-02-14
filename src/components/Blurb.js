@@ -24,12 +24,12 @@ class Blurb extends Component {
 
 				<div className="col-xs-12" style={styles.divTopSection}>
 					<h3>
-						Better than the Competition.
+						Specialist products and services.
 					</h3>
 					<p>
-						ipsum dolor sit amet, consectetur adipisicing elit.<br/>
-						Reiciendis, id, aut, officiis laboriosam a vero illo dolor<br/>
-						asperiores provident quibusdam praesentium ipsum!
+						We supply <strong>specialist</strong> products and services<br/>
+						for a wide range of motoring applications<br/>
+            
 					</p>
 				</div>
 
