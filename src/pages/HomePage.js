@@ -2,34 +2,43 @@ import React, { Component } from 'react'
 
 import Banner from '../components/Banner'
 import Blurb from '../components/Blurb'
+import Details from '../components/Details'
 import PageLinks from '../components/PageLinks'
 import Footer from '../components/Footer'
+import Seperator from '../components/Seperator'
 
 class HomePage extends Component {
 	render() {
 
     const styles = {
-			divMain: {
-				backgroundColor: "#000" // #CBCBCB
+			section: {
+				backgroundColor: "#000"
       },
       divBanner: {
       },
       divBlurb: {
 				maxWidth: "1030px",
-				width: "80%",
-				//marginTop: "815px"
+				//width: "80%"
+      },
+      divDetails: {
+				maxWidth: "1030px",
+				//width: "80%"
       },
       divPageLinks: {
 				maxWidth: "1030px",
-        width: "80%"
+        //width: "80%"
       },
       divFooter: {
         marginTop: "80px"
       },
+      divSeperator: {
+				maxWidth: "1030px",
+        width: "80%"
+      }
     }
 
 		return (
-			<div className="container-fluid" style={styles.divMain}>
+			<section className="container-fluid" style={styles.section}>
 
 				<div className="row" style={styles.divBanner}>
 					<Banner />
@@ -39,6 +48,18 @@ class HomePage extends Component {
 					<Blurb />
 				</div>
 
+        <div className="row center-block" style={styles.divSeperator}>
+          <Seperator />
+        </div>
+
+				<div className="row center-block" style={styles.divDetails}>
+					<Details />
+				</div>
+
+        <div className="row center-block" style={styles.divSeperator}>
+          <Seperator />
+        </div>
+
 				<div className="row center-block" style={styles.divPageLinks}>
 					<PageLinks />
 				</div>
@@ -47,7 +68,7 @@ class HomePage extends Component {
 					<Footer />
 				</div>
 
-			</div>
+			</section>
 		)
 	}
 }

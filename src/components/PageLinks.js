@@ -24,14 +24,14 @@ class PageLinks extends Component {
 		return (
       <div>
         <h2 className="col-xs-12" style={styles.heading}>Pages</h2>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={ServicingPage} /></div>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={RepairsPage} /></div>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={TuningPage} /></div>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={ProductsPage} /></div>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={ElectricalPage} /></div>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={DiagnosticsPage} /></div>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={FabricationPage} /></div>
-				<div className="col-lg-3 col-md-4 col-sm-6 col-xs-12" style={styles.divCell}><PageInfo page={ServicingPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={ServicingPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={RepairsPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={TuningPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={ProductsPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={ElectricalPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={DiagnosticsPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={FabricationPage} /></div>
+				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={ServicingPage} /></div>
       </div>
 		)
 	}

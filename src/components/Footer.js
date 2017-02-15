@@ -4,7 +4,7 @@ class Footer extends Component {
 	render() {
 
 		const styles = {
-			footerMain: {
+			main: {
         width: "100%",
         paddingBottom: "48px",
         backgroundColor: "#fff",
@@ -29,7 +29,7 @@ class Footer extends Component {
     }
 
 		return (
-			<footer style={styles.footerMain}>
+			<footer style={styles.main}>
 				<div style={styles.divSeparator} />
         <img src={require("../images/logo_small.png")} alt="Specialised Auto Services" style={styles.imgLogo} />
         <p><a href="https://www.facebook.com/search/top/?q=specialised%20auto%20services" style={styles.link}>Facebook</a></p>

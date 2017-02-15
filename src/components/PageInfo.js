@@ -15,12 +15,13 @@ class PageInfo extends Component {
 
   render() {
 
+    var urlGrey = require("../images/servicing_grey.jpg")
+    var urlColoured = require("../images/servicing.jpg")
+
     const styles = {
       anchor: {
         base: {
-          position: "relative",
 					width: "100%",
-          // maxWidth: "228px", // 220
           float: "left",
           textDecoration: "none",
           backgroundColor: "#333",
@@ -39,15 +40,28 @@ class PageInfo extends Component {
         }
       },
 
-      imageGrey: {
-        position: "absolute",
-        width: "100%"
+      divImages: {
+        position: "relative",
+        minHeight: "158px",
+        maxHeight: "158px",
+        overflow: "hidden"
       },
 
-      imageColoured: {
+      image: {
+        grey: {
+          backgroundImage: "url(" + urlGrey + ")",
+        },
+        colour: {
+          backgroundImage: "url(" + urlColoured + ")",
+        },
         base: {
           position: "absolute",
           width: "100%",
+          minWidth: "220px",
+          minHeight: "158px",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
           transition: "opacity 0.4s"
         },
         lit: {
@@ -61,11 +75,11 @@ class PageInfo extends Component {
       text: {
         base: {
           textAlign: "center",
-          margin: "200px 0 10px 0",
+          margin: "15px 0 11px 0",
 				  transition: "color 0.4s"
         },
         lit: {
-				  color: "#ECE01C"  // DF060A
+				  color: "#ECE01C"  // D91F26
         },
         dim: {
           color: "#fff"
@@ -75,8 +89,10 @@ class PageInfo extends Component {
 
     return (
 			<a href={this.props.page.path} style={{...styles.anchor.base,...this.state.mouseOver ? styles.anchor.lit : styles.anchor.dim}} onMouseEnter={this.onMouseMoveHandler} onMouseLeave={this.onMouseMoveHandler}>
-        <img src={require("../images/servicing_grey.jpg")} role="presentation" style={styles.imageGrey} />
-        <img src={require("../images/servicing.jpg")} role="presentation" style={{...styles.imageColoured.base,...this.state.mouseOver ? styles.imageColoured.lit : styles.imageColoured.dim}} />
+        <div style={styles.divImages}>
+          <div style={{...styles.image.grey,...styles.image.base}} />
+          <div style={{...styles.image.colour,...styles.image.base,...this.state.mouseOver ? styles.image.lit : styles.image.dim}} />
+        </div>
 				<h3 style={{...styles.text.base,...this.state.mouseOver ? styles.text.lit : styles.text.dim}}>{this.props.page.title}</h3>
 			</a>
     )

@@ -4,14 +4,32 @@ import { Carousel } from 'react-bootstrap'
 class Banner extends Component {
 	render() {
 
+    var backdrop = require("../images/showroom.png")
+    var imageOne = require("../images/car.png")
+    var imageTwo = require("../images/car.png")
+
 		const styles = {
-      // backdrop: {
-      //   position: "absolute",
-      //   width: "100%",
-      // },
 			carousel: {
-				height: "800px"
+        //height: "800px", // SAD
+        backgroundImage: "url(" + backdrop + ")",
+        backgroundPosition: "center center",
+        backgroundSize: "cover"
 			},
+      carouselItem: {
+        base: {
+          width: "100%",
+          height: "800px",
+          backgroundRepeat: "no-repeat"
+        },
+        itemOne: {
+          backgroundImage: "url(" + imageOne + ")",
+          backgroundSize: "700px",
+          backgroundPosition: "50% 70%"
+        },
+        itemTwo: {
+          backgroundImage: "url(" + imageTwo + ")"
+        }
+      },
 			logo: {
         position: "absolute",
         marginLeft: "auto",
@@ -19,26 +37,23 @@ class Banner extends Component {
         left: "0",
         right: "0",
         top: "50px",
-        width: "50%"
+        width: "80%",
+        maxWidth: "1030px"
       }
 		}
 
 		return (
 			<div>
-
-        {/*<img src={require("../images/showroom.png")} role="presentation" style={styles.backdrop} />*/}
-
 				<Carousel indicators={false} style={styles.carousel}>
+          <Carousel.Item>
+            <div style={{...styles.carouselItem.base,...styles.carouselItem.itemOne}} />
+          </Carousel.Item>
 					<Carousel.Item>
-						<img className="center-block" src={require("../images/showroom.png")} role="presentation" />
-					</Carousel.Item>
-					<Carousel.Item>
-						<img className="center-block" src={require("../images/car.png")} role="presentation" />
+						<div style={{...styles.carouselItem.base,...styles.carouselItem.itemOne}} />
 					</Carousel.Item>
 				</Carousel>
 
         <img src={require("../images/logo_large.png")} alt="Specialised Auto Services" style={styles.logo} />
-
 			</div>
 		)
 	}
