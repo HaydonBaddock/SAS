@@ -14,7 +14,7 @@ class PageLinks extends Component {
 
     const styles = {
       heading: {
-        color: "#aaa"
+        color: "#ddd"
       },
       divCell: {
 				marginTop: "30px"
