@@ -14,7 +14,8 @@ class PageLinks extends Component {
 
     const styles = {
       heading: {
-        color: "#ddd"
+        color: "#ddd",
+        marginBottom: "-10px"
       },
       divCell: {
 				marginTop: "30px"
@@ -23,7 +24,7 @@ class PageLinks extends Component {
 
 		return (
       <div>
-        <h2 className="col-xs-12" style={styles.heading}>Pages</h2>
+        <h2 className="col-xs-12" style={styles.heading}>Services</h2>
 				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={ServicingPage} /></div>
 				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={RepairsPage} /></div>
 				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={TuningPage} /></div>

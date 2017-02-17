@@ -18,6 +18,8 @@ class Details extends Component {
       },
       profileText: {
         marginTop: "43px"
+      },
+      link: {
       }
 		}
 
@@ -45,7 +47,13 @@ class Details extends Component {
 
         <div className="col-xs-12 col-md-4">
           <h1>Contact</h1>
+          <p>272 Whites Rd<br/>RD2 Kaiapoi<br/>CHRISTCHURCH</p>
+          <a href=""><strong>info@SAS.com</strong></a>
+
+          <br/>
+          <h1>Brakes Partner</h1>
           <p>hyusduhkj uhj ujiu iu iuuiluli uiui ujhiulilu uil lijil lijji jiil iljil lijlijilj jillij lijlij lij iljijiuji yhu tfy rft dedc rft</p>
+          <a href="http://www.brembo.com/en" style={styles.link}><strong>www.brembo.com</strong></a>
         </div>
 
       </div>

@@ -39,7 +39,7 @@ class HomePage extends Component {
       },
       divSeparator: {
 				maxWidth: "1030px",
-        width: "80%"
+        //width: "80%"
       }
     }
 

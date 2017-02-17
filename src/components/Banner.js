@@ -10,6 +10,7 @@ class Banner extends Component {
 
 		const styles = {
 			carousel: {
+        width: "100%",
         //height: "800px", // SAD
         backgroundImage: "url(" + backdrop + ")",
         backgroundPosition: "center center",
@@ -17,7 +18,7 @@ class Banner extends Component {
 			},
       carouselItem: {
         base: {
-          width: "100%",
+          //width: "100%",
           height: "800px",
           backgroundRepeat: "no-repeat"
         },
