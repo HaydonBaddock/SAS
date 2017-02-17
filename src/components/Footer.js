@@ -32,7 +32,7 @@ class Footer extends Component {
 			<footer style={styles.main}>
 				<div style={styles.divSeparator} />
 				<img src={require("../images/logo_small.png")} alt="Specialised Auto Services" style={styles.imgLogo} />
-				<p><a href="https://www.facebook.com/search/top/?q=specialised%20auto%20services" style={styles.link}>Facebook</a></p>
+				<p><a href="https://www.facebook.com/SASworkshop/" style={styles.link}>Facebook</a></p>
 				<p style={styles.text}>© Copyright 2017 Specialised Auto Services Ltd.</p>
 			</footer>
 		)

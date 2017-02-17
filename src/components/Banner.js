@@ -4,31 +4,46 @@ import { Carousel } from 'react-bootstrap'
 class Banner extends Component {
 	render() {
 
-		var backdrop = require("../images/showroom.png")
-		var imageOne = require("../images/car.png")
-		var imageTwo = require("../images/car.png")
+		//var backdrop = require("../images/showroom.png")
+		var car = require("../images/car.jpg")
+		var boat = require("../images/boat.jpg")
+		var plane = require("../images/plane.jpg")
 
 		const styles = {
 			carousel: {
 				width: "100%",
 				//height: "800px", // SAD
-				backgroundImage: "url(" + backdrop + ")",
-				backgroundPosition: "center center",
-				backgroundSize: "cover"
+				//backgroundImage: "url(" + backdrop + ")",
+				//backgroundPosition: "center center",
+				//backgroundSize: "cover"
 			},
 			carouselItem: {
 				base: {
-					//width: "100%",
+					width: "100%",
 					height: "800px",
-					backgroundRepeat: "no-repeat"
+					backgroundSize: "cover",
+					//backgroundRepeat: "no-repeat"
+					backgroundPosition: "center center"
 				},
-				itemOne: {
-					backgroundImage: "url(" + imageOne + ")",
-					backgroundSize: "700px",
-					backgroundPosition: "50% 70%"
+				car: {
+					backgroundImage: "url(" + car + ")"
 				},
-				itemTwo: {
-					backgroundImage: "url(" + imageTwo + ")"
+				boat: {
+					backgroundImage: "url(" + boat + ")"
+				},
+				plane: {
+					backgroundImage: "url(" + plane + ")"
+				},
+				text: {
+					// position: "absolute",
+					// marginLeft: "auto",
+					// marginRight: "auto",
+					// left: "0",
+					// right: "0",
+					color: "white",
+					fontSize: "30pt",
+					fontWeight: "bold"
+
 				}
 			},
 			logo: {
@@ -46,11 +61,17 @@ class Banner extends Component {
 		return (
 			<div>
 				<Carousel indicators={false} style={styles.carousel}>
-					<Carousel.Item>
-						<div style={{...styles.carouselItem.base,...styles.carouselItem.itemOne}} />
+					<Carousel.Item alt="CARS">
+						<div style={{...styles.carouselItem.base,...styles.carouselItem.car}} />
+						<div className="carousel-caption"><text style={styles.carouselItem.text}>Automotive</text></div>
 					</Carousel.Item>
 					<Carousel.Item>
-						<div style={{...styles.carouselItem.base,...styles.carouselItem.itemOne}} />
+						<div style={{...styles.carouselItem.base,...styles.carouselItem.plane}} />
+						<div className="carousel-caption"><text style={styles.carouselItem.text}>Aircraft</text></div>
+					</Carousel.Item>
+					<Carousel.Item>
+						<div style={{...styles.carouselItem.base,...styles.carouselItem.boat}} />
+						<div className="carousel-caption"><text style={styles.carouselItem.text}>Jet boats</text></div>
 					</Carousel.Item>
 				</Carousel>
 
