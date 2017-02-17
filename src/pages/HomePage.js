@@ -10,42 +10,42 @@ import Footer from '../components/Footer'
 class HomePage extends Component {
 	render() {
 
-    const styles = {
-      separator: {
-        width: "100%",
-        height: "2px",
-        backgroundColor: "#D91F26"
-      },
+		const styles = {
+			separator: {
+				width: "100%",
+				height: "2px",
+				backgroundColor: "#D91F26"
+			},
 
 			section: {
 				backgroundColor: "#000"
-      },
-      divBanner: {
-      },
-      divBlurb: {
+			},
+			divBanner: {
+			},
+			divBlurb: {
 				maxWidth: "1030px",
 				//width: "80%"
-      },
-      divDetails: {
+			},
+			divDetails: {
 				maxWidth: "1030px",
 				//width: "80%"
-      },
-      divPageLinks: {
+			},
+			divPageLinks: {
 				maxWidth: "1030px",
-        //width: "80%"
-      },
-      divFooter: {
-        marginTop: "80px"
-      },
-      divSeparator: {
+				//width: "80%"
+			},
+			divFooter: {
+				marginTop: "80px"
+			},
+			divSeparator: {
 				maxWidth: "1030px",
-        //width: "80%"
-      }
-    }
+				//width: "80%"
+			}
+		}
 
-    const Separator = () => (
-      <div style={styles.separator} />
-    )
+		const Separator = () => (
+			<div style={styles.separator} />
+		)
 
 		return (
 			<section className="container-fluid" style={styles.section}>
@@ -58,17 +58,17 @@ class HomePage extends Component {
 					<Blurb />
 				</div>
 
-        <div className="row center-block" style={styles.divSeparator}>
-          <Separator />
-        </div>
+				<div className="row center-block" style={styles.divSeparator}>
+					<Separator />
+				</div>
 
 				<div className="row center-block" style={styles.divDetails}>
 					<Details />
 				</div>
 
-        <div className="row center-block" style={styles.divSeparator}>
-          <Separator />
-        </div>
+				<div className="row center-block" style={styles.divSeparator}>
+					<Separator />
+				</div>
 
 				<div className="row center-block" style={styles.divPageLinks}>
 					<PageLinks />

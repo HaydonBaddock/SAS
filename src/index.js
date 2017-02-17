@@ -13,7 +13,7 @@ import FabricationPage from './pages/FabricationPage'
 
 class App extends Component {
 	render() {
-    return (
+		return (
 			<Router>
 				<Route path="/" component={HomePage} />
 				<Route path="Servicing" component={ServicingPage} />
@@ -29,6 +29,6 @@ class App extends Component {
 }
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+	<App />,
+	document.getElementById('root')
 )
