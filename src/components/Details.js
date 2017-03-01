@@ -47,16 +47,22 @@ class Details extends Component {
 
 				<div className="col-xs-12 col-md-4">
 					<h1>Contact</h1>
-					<p>272 Whites Rd<br/>RD2 Kaiapoi<br/>CHRISTCHURCH</p>
-					<p>mechanicl inquiries  <strong>027 363 4473</strong></p>
-					<p>electrical inquiries  <strong>027 336 0044</strong></p>
-					<a href="specialisedauto@outlook.com"><strong>specialisedauto@outlook.com</strong></a>
+					<p>
+						272 Whites Rd<br/>
+						RD2 Kaiapoi<br/>
+						CHRISTCHURCH
+					</p>
+					<p>
+						mechanicl inquiries  <strong>027 363 4473</strong><br/>
+						electrical inquiries  <strong>027 336 0044</strong>
+					</p>
+					<a href="mailto:specialisedauto@outlook.com"><strong>specialisedauto@outlook.com</strong></a>
 
 					<br/>
 					<h1>Braketech</h1>
 					<p>SAS business partner</p>
 					<p>Suppliers of high quality brake and clutch products for performance road to top level Motorsport.</p>
-					<a href="http://braketechnz.com/" style={styles.link}><strong>braketechnz.com</strong></a>
+					<a href="http://braketechnz.com/" target="_blank" style={styles.link}><strong>braketechnz.com</strong></a>
 				</div>
 
 			</div>

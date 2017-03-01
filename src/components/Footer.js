@@ -20,8 +20,7 @@ class Footer extends Component {
 				margin: "40px 0 40px 0"
 			},
 			link: {
-				color: "#555",
-				fontWeight: "bold"
+				color: "#555"
 			},
 			text: {
 				color: "#555"
@@ -32,7 +31,7 @@ class Footer extends Component {
 			<footer style={styles.main}>
 				<div style={styles.divSeparator} />
 				<img src={require("../images/logo_small.png")} alt="Specialised Auto Services" style={styles.imgLogo} />
-				<p><a href="https://www.facebook.com/SASworkshop/" style={styles.link}>Facebook</a></p>
+				<p><a href="https://www.facebook.com/SASworkshop/" style={styles.link}><strong>Facebook</strong></a></p>
 				<p style={styles.text}>© Copyright 2017 Specialised Auto Services Ltd.</p>
 			</footer>
 		)
