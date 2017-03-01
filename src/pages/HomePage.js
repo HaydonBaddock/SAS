@@ -5,7 +5,6 @@ import Blurb from '../components/Blurb'
 import Details from '../components/Details'
 import PageLinks from '../components/PageLinks'
 import Footer from '../components/Footer'
-//import Seperator from '../components/Seperator'
 
 class HomePage extends Component {
 	render() {
@@ -17,8 +16,8 @@ class HomePage extends Component {
 				backgroundColor: "#D91F26"
 			},
 
-			section: {
-				backgroundColor: "#000"
+			main: {
+				backgroundColor: "#111"
 			},
 			divBanner: {
 			},
@@ -48,7 +47,7 @@ class HomePage extends Component {
 		)
 
 		return (
-			<section className="container-fluid" style={styles.section}>
+			<div className="container-fluid" style={styles.main}>
 
 				<div className="row" style={styles.divBanner}>
 					<Banner />
@@ -78,7 +77,7 @@ class HomePage extends Component {
 					<Footer />
 				</div>
 
-			</section>
+			</div>
 		)
 	}
 }

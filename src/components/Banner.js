@@ -71,7 +71,7 @@ class Banner extends Component {
 					</Carousel.Item>
 					<Carousel.Item>
 						<div style={{...styles.carouselItem.base,...styles.carouselItem.boat}} />
-						<div className="carousel-caption"><text style={styles.carouselItem.text}>Jet boats</text></div>
+						<div className="carousel-caption"><text style={styles.carouselItem.text}>Jet Boats</text></div>
 					</Carousel.Item>
 				</Carousel>
 
