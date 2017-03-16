@@ -34,7 +34,7 @@ class HomePage extends Component {
 				//width: "80%"
 			},
 			divFooter: {
-				marginTop: "80px"
+				marginTop: "50px"
 			},
 			divSeparator: {
 				maxWidth: "1030px",
@@ -61,16 +61,16 @@ class HomePage extends Component {
 					<Separator />
 				</div>
 
-				<div className="row center-block" style={styles.divDetails}>
-					<Details />
+				<div className="row center-block" style={styles.divPageLinks}>
+					<PageLinks />
 				</div>
 
 				<div className="row center-block" style={styles.divSeparator}>
 					<Separator />
 				</div>
 
-				<div className="row center-block" style={styles.divPageLinks}>
-					<PageLinks />
+				<div className="row center-block" style={styles.divDetails}>
+					<Details />
 				</div>
 
 				<div className="row" style={styles.divFooter}>

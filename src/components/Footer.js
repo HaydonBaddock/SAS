@@ -7,7 +7,7 @@ class Footer extends Component {
 			main: {
 				width: "100%",
 				paddingBottom: "48px",
-				backgroundColor: "#fff",
+				backgroundColor: "white",
 				textAlign: "center"
 			},
 			divSeparator: {

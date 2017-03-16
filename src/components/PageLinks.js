@@ -14,11 +14,10 @@ class PageLinks extends Component {
 
 		const styles = {
 			heading: {
-				color: "#ddd",
-				marginBottom: "-10px"
+				color: "#ddd"
 			},
 			divCell: {
-				marginTop: "30px"
+				marginBottom: "30px"
 			}
 		}
 

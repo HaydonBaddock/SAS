@@ -11,7 +11,7 @@ class Banner extends Component {
 
 		const styles = {
 			carousel: {
-				width: "100%",
+				width: "100%"
 				//height: "800px", // SAD
 				//backgroundImage: "url(" + backdrop + ")",
 				//backgroundPosition: "center center",
@@ -22,8 +22,8 @@ class Banner extends Component {
 					width: "100%",
 					height: "800px",
 					backgroundSize: "cover",
-					//backgroundRepeat: "no-repeat"
-					backgroundPosition: "center center"
+					backgroundPosition: "center center",
+					opacity: "0.3"
 				},
 				car: {
 					backgroundImage: "url(" + car + ")"
@@ -35,15 +35,9 @@ class Banner extends Component {
 					backgroundImage: "url(" + plane + ")"
 				},
 				text: {
-					// position: "absolute",
-					// marginLeft: "auto",
-					// marginRight: "auto",
-					// left: "0",
-					// right: "0",
-					color: "white",
+					color: "#ddd",
 					fontSize: "30pt",
 					fontWeight: "bold"
-
 				}
 			},
 			logo: {
@@ -55,6 +49,11 @@ class Banner extends Component {
 				top: "50px",
 				width: "80%",
 				maxWidth: "1030px"
+			},
+			bar: {
+				width: "100%",
+				height: "20px",
+				backgroundColor: "#ddd"
 			}
 		}
 
@@ -74,8 +73,10 @@ class Banner extends Component {
 						<div className="carousel-caption"><text style={styles.carouselItem.text}>Jet Boats</text></div>
 					</Carousel.Item>
 				</Carousel>
-
+				
 				<img src={require("../images/logo_large.png")} alt="Specialised Auto Services" style={styles.logo} />
+
+				<div style={styles.bar} />
 			</div>
 		)
 	}

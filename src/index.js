@@ -18,8 +18,8 @@ class App extends Component {
 				<Route path="/" component={HomePage} />
 				<Route path="Servicing" component={ServicingPage} />
 				<Route path="Repairs" component={RepairsPage} />
-				<Route path="Tuning" component={TuningPage}/>
-				<Route path="Products" component={ProductsPage}/>
+				<Route path="Tuning" component={TuningPage} />
+				<Route path="Products" component={ProductsPage} />
 				<Route path="Electrical" component={ElectricalPage} />
 				<Route path="Diagnostics" component={DiagnosticsPage} />
 				<Route path="Fabrication" component={FabricationPage} />
