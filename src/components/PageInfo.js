@@ -82,7 +82,7 @@ class PageInfo extends Component {
 					color: "#ECE01C"	// D91F26
 				},
 				dim: {
-					color: "#fff"
+					color: "#aaa"
 				}
 			}
 		}

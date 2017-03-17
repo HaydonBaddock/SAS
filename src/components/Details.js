@@ -43,14 +43,14 @@ class Details extends Component {
 					</div>
 				</div>
 
-				<div className="row">
+				<div className="row" style={{margin:"0 29px 0 29px"}}>
 					<div className="col-xs-12 col-md-9">
 						<Profile picture="profile_pic.png" name="Jason Anderson" position="Electrical Engineer & Co-Founder" />
 						<Profile picture="profile_pic.png" name="Richard Baddock" position="Mechanical Engineer & Co-Founder" />
 						<Profile picture="profile_pic.png" name="Other Guy" position="Mechanic" />
 					</div>
 
-					<div className="col-xs-12 col-md-3">
+					<div className="col-xs-12 col-md-3" style={{marginTop:"36px"}}>
 						<h1>Contact</h1>
 						<p>
 							272 Whites Rd<br/>

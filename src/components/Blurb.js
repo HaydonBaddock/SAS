@@ -7,15 +7,17 @@ class Blurb extends Component {
 			main: {
 				textAlign: "center",
 				color: "#ddd"
+			},
+			text: {
+				fontSize: "15pt"
 			}
 		}
 
 		return (
 			<div className="col-xs-12" style={styles.main}>
-				<h3>Specialist products and services.</h3>
-				<p>
+				<p style={styles.text}>
 					We supply <strong>specialist</strong> products and services<br/>
-					for a wide range of motoring applications<br/>
+					for a wide range of motoring applications.<br/>
 				</p>
 			</div>
 		)

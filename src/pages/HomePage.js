@@ -86,7 +86,7 @@ class HomePage extends Component {
 							<Separator />
 						</div>
 
-						<div className='row center-block' style={{width:'80%', maxWidth:'1030px'}}>
+						<div className='row center-block' style={{width:'80%', maxWidth:'1030px', marginTop:'50px', marginBottom:'20px'}}>
 							<PageLinks />
 						</div>
 
