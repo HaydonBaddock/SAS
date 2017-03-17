@@ -98,7 +98,9 @@ class HomePage extends Component {
 							<Details />
 						</div>
 
-						<Footer />
+						<div style={{marginTop:'50px'}}>
+							<Footer />
+						</div>
 
 					</div>
 
