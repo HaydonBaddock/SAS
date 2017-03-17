@@ -45,8 +45,8 @@ class Details extends Component {
 
 				<div className="row">
 					<div className="col-xs-12 col-md-9">
-						<Profile picture="profile_pic.png" name="Richard Baddock" position="Mechanical Engineer & Co-Founder" />
 						<Profile picture="profile_pic.png" name="Jason Anderson" position="Electrical Engineer & Co-Founder" />
+						<Profile picture="profile_pic.png" name="Richard Baddock" position="Mechanical Engineer & Co-Founder" />
 						<Profile picture="profile_pic.png" name="Other Guy" position="Mechanic" />
 					</div>
 

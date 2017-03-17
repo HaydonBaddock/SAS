@@ -17,7 +17,7 @@ class Footer extends Component {
 			},
 			imgLogo: {
 				width: "150px",
-				margin: "40px 0 40px 0"
+				margin: "40px 0 40px 12px"
 			},
 			link: {
 				color: "#555"

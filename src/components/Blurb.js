@@ -5,7 +5,7 @@ class Blurb extends Component {
 
 		const styles = {
 			main: {
-				textAlign: "left",
+				textAlign: "center",
 				color: "#ddd"
 			}
 		}
