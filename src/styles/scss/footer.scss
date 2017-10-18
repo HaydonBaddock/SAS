@@ -1,0 +1,23 @@
+footer {
+  padding-bottom: 48px;
+  background-color: white;
+  text-align: center;
+
+  .separator {
+    height: 20px;
+    background-color: #555;
+  }
+
+  .image-logo {
+    width: 150px;
+    margin: 40px 0 40px 12px;
+  }
+  
+  .link {
+    color: #555;
+  }
+
+  .text {
+    color: #555;
+  }
+}
