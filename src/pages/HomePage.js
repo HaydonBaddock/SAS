@@ -64,7 +64,7 @@ class HomePage extends Component {
 
 		return (
 			<div style={{width:'100%', backgroundColor:'#000'}}>
-				<Parallax strength={300}>
+				<Parallax strength={1300}>
 
 					<Background>
 							<Banner />
@@ -78,23 +78,23 @@ class HomePage extends Component {
 							<Bar />
 						</div>
 
-						<div className='row center-block' style={{width:'80%', maxWidth:'1030px', padding:'50px'}}>
+						<div className='d-block mx-auto' style={{width:'80%', maxWidth:'1030px', padding:'50px'}}>
 							<Blurb />
 						</div>
 
-						<div className='row center-block' style={{width:'80%', maxWidth:'1030px'}}>
+						<div className='d-block mx-auto' style={{width:'80%', maxWidth:'1030px'}}>
 							<Separator />
 						</div>
 
-						<div className='row center-block' style={{width:'80%', maxWidth:'1030px', marginTop:'50px', marginBottom:'20px'}}>
+						<div className='d-block mx-auto' style={{width:'80%', maxWidth:'1030px', marginTop:'50px', marginBottom:'20px'}}>
 							<PageLinks />
 						</div>
 
-						<div className='row center-block' style={{width:'80%', maxWidth:'1030px'}}>
+						<div className='d-block mx-auto' style={{width:'80%', maxWidth:'1030px'}}>
 							<Separator />
 						</div>
 
-						<div className='row center-block' style={{width:'80%', maxWidth:'1030px'}}>
+						<div className='d-block mx-auto' style={{width:'80%', maxWidth:'1030px', marginTop:'34px'}}>
 							<Details />
 						</div>
 

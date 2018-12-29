@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route } from 'react-router'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
 import ServicingPage from './pages/ServicingPage'
@@ -15,20 +15,19 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<Route path="/" component={HomePage} />
-				<Route path="Servicing" component={ServicingPage} />
-				<Route path="Repairs" component={RepairsPage} />
-				<Route path="Tuning" component={TuningPage} />
-				<Route path="Products" component={ProductsPage} />
-				<Route path="Electrical" component={ElectricalPage} />
-				<Route path="Diagnostics" component={DiagnosticsPage} />
-				<Route path="Fabrication" component={FabricationPage} />
+				<div>
+					<Route path="/" component={HomePage} />
+					<Route path="/Servicing" component={ServicingPage} />
+					<Route path="/Repairs" component={RepairsPage} />
+					<Route path="/Tuning" component={TuningPage} />
+					<Route path="/Products" component={ProductsPage} />
+					<Route path="/Electrical" component={ElectricalPage} />
+					<Route path="/Diagnostics" component={DiagnosticsPage} />
+					<Route path="/Fabrication" component={FabricationPage} />
+				</div>
 			</Router>
 		)
 	}
 }
 
-ReactDOM.render(
-	<App />,
-	document.getElementById('root')
-)
+ReactDOM.render(<App />, document.getElementById('root'))

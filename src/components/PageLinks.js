@@ -19,7 +19,7 @@ class PageLinks extends Component {
 		}
 
 		return (
-			<div>
+			<div className='row'>
 				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={ServicingPage} /></div>
 				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={RepairsPage} /></div>
 				<div className="col-md-3 col-sm-4 col-xs-6" style={styles.divCell}><PageInfo page={TuningPage} /></div>

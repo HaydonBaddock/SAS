@@ -9,22 +9,26 @@ class Details extends Component {
 				textAlign: "left"
 			},
 			profile: {
-				margin: "20px 0 20px 0"
+				clear: "both",
+				height: "150px",
+				marginTop: "20px",
+				marginBottom: "20px"
 			},
 			profilePic: {
 				float: "left",
-				width: "150px",
-				marginRight: "25px"
+				width: "150px"
 			},
 			profileText: {
-				marginTop: "43px"
+				float: "left",
+				marginTop: "43px",
+				marginLeft: "25px"
 			},
 			link: {
 			}
 		}
 
 		const Profile = ({picture, name, position}) => (
-			<div className="row" style={styles.profile}>
+			<div style={styles.profile}>
 				<img src={require("../images/" + picture)} role="presentation" className="img-circle" style={styles.profilePic} />
 				<div style={styles.profileText}>
 					<h3><strong>{name}</strong></h3>
@@ -36,21 +40,19 @@ class Details extends Component {
 		return (
 			<div style={styles.main}>
 
-				<div className="row">
-					<div className="col-xs-12">
-						<h1>About</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+				<div>
+					<h1>About</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 
-				<div className="row" style={{margin:"0 29px 0 29px"}}>
+				<div className="row">
 					<div className="col-xs-12 col-md-9">
 						<Profile picture="profile_pic.png" name="Jason Anderson" position="Electrical Engineer & Co-Founder" />
 						<Profile picture="profile_pic.png" name="Richard Baddock" position="Mechanical Engineer & Co-Founder" />
 						<Profile picture="profile_pic.png" name="Other Guy" position="Mechanic" />
 					</div>
 
-					<div className="col-xs-12 col-md-3" style={{marginTop:"36px"}}>
+					<div className="col-xs-12 col-md-3" style={{marginTop:"36px",paddingLeft:"0px"}}>
 						<h1>Contact</h1>
 						<p>
 							272 Whites Rd<br/>
@@ -58,7 +60,7 @@ class Details extends Component {
 							CHRISTCHURCH
 						</p>
 						<p>
-							mechanicl inquiries  <strong>027 363 4473</strong><br/>
+							mechanical inquiries  <strong>027 363 4473</strong><br/>
 							electrical inquiries  <strong>027 336 0044</strong>
 						</p>
 						<a href="mailto:specialisedauto@outlook.com"><strong>specialisedauto@outlook.com</strong></a>

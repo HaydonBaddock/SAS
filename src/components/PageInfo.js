@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class PageInfo extends Component {
 	constructor() {
@@ -88,18 +89,15 @@ class PageInfo extends Component {
 		}
 
 		return (
-			<a href={this.props.page.path} style={{...styles.anchor.base,...this.state.mouseOver ? styles.anchor.lit : styles.anchor.dim}} onMouseEnter={this.onMouseMoveHandler} onMouseLeave={this.onMouseMoveHandler}>
+			<Link to={this.props.page.path} style={{...styles.anchor.base,...this.state.mouseOver ? styles.anchor.lit : styles.anchor.dim}} onMouseEnter={this.onMouseMoveHandler} onMouseLeave={this.onMouseMoveHandler}>
 				<div style={styles.divImages}>
 					<div style={{...styles.image.grey,...styles.image.base}} />
 					<div style={{...styles.image.colour,...styles.image.base,...this.state.mouseOver ? styles.image.lit : styles.image.dim}} />
 				</div>
 				<h3 style={{...styles.text.base,...this.state.mouseOver ? styles.text.lit : styles.text.dim}}>{this.props.page.title}</h3>
-			</a>
+			</Link>
 		)
 	}
 }
 
 export default PageInfo
-
-// {require("../images/" + this.props.page.greyImage)}
-// {require("../images/" + this.props.page.colourImage)}

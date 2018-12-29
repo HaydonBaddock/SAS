@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Footer from '../components/Footer'
 
 class FabricationPage extends Component {
-	static path = "/#/Fabrication"
+	static path = "/Fabrication"
 	static title = "Fabrication"
 	static colourImage = "fabrication.jpg"
 	static greyImage = "fabrication_grey.jpg"

@@ -3,19 +3,26 @@
   "version": "0.0.0",
   "description": "",
   "dependencies": {
-    "react": "^15.4.2",
-    "react-bootstrap": "^0.30.7",
-    "react-dom": "^15.4.2",
-    "react-parallax": "^1.2.6",
-    "react-router": "^2.6.1"
+    "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.7.0",
+    "react-parallax": "^2.0.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
-    "react-scripts": "0.8.5"
+    "react-scripts": "2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
   "author": "HaydonBaddock",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
